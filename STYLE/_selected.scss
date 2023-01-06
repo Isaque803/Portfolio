@@ -1,0 +1,74 @@
+@import "variables";
+
+.selected{
+    position: absolute;
+    width: calc(100% + 24px);
+    height: calc(100% + 24px);
+    z-index: -2;
+    animation: selected 0.5s linear infinite;
+    display: none;
+    background-color: transparent;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-menu:hover ~ .selected, .html-icon:hover .selected, .css-icon:hover .selected, .github-icon:hover .selected, .sass-icon:hover .selected, .javascript-icon:hover .selected, .menu-mobile:hover .selected, .project:hover .selected, .my-img:hover .selected, .btn-social-media:hover .selected{
+    display: block;
+}
+
+@keyframes selected{
+    50%{
+        width: calc(100% + 33px);
+        height: calc(100% + 33px);
+    }100%{
+        width: calc(100% + 24px);
+        height: calc(100% + 24px);
+    }
+}
+
+.top-left::after, .top-left div::after, .top-right::after, .top-right div::after, .bottom-left::after, .bottom-left div::after, .bottom-right::after, .bottom-right div::after{
+    content:"";
+    position: absolute;
+    width: $measure-primary;
+    height: $measure-secondary;
+}
+
+.top-left::after, .top-left::before, .top-right::after, .top-right::before{
+    top: 0px;
+    background-color: $color-primary;
+    z-index: 1;
+}
+
+.top-left::before, .top-left div::before, .top-right::before, .top-right div::before, .bottom-left::before, .bottom-left div::before, .bottom-right::before, .bottom-right div::before{
+    content:"";
+    position: absolute;
+    width: $measure-secondary;
+    height: $measure-primary;
+}
+
+.top-left div::before, .top-left::after, .top-left::before, .top-left div::after, .bottom-left div::before, .bottom-left::after, .bottom-left::before, .bottom-left div::after{
+    left: 0px;
+}
+
+.top-right::after, .top-right::before, .top-right div::after, .top-right div::before, .bottom-right::after, .bottom-right::before, .bottom-right div::after, .bottom-right div::before{
+    right: 0px;
+}
+
+.bottom-left::after, .bottom-left::before, .bottom-right::after, .bottom-right::before{
+    bottom: 0px;
+    background-color: $color-primary;
+    z-index: 1;
+}
+
+.top-left div::before, .top-right div::after, .top-right div::before, .top-left div::after{
+    top: 4px;
+    background-color: $color-secondary;
+}
+
+.bottom-left div::before, .bottom-right div::after, .bottom-right div::before, .bottom-left div::after{
+    bottom: -4px;
+    background-color: $color-secondary;
+}
+
+

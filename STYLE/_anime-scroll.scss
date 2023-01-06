@@ -1,0 +1,21 @@
+[data-anime]{
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+[data-anime = "left"]{
+    transform: translate3d(-200px, 0px, 0px);
+}
+
+[data-anime = "right"]{
+    transform: translate3d(200px, 0px, 0px);
+}
+
+[data-anime = "top"]{
+    transform: translate3d(0px, -200px, 0px);
+}
+
+[data-anime].anime-scroll{
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+}

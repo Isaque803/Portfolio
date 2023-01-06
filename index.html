@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE/main.css">
+    <script src="https://kit.fontawesome.com/78f0a022bd.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Portifólio</title>
+</head>
+<body>  
+    <!--HEADER ------------------------------------------------------------------------------------- -->
+    <header>
+        <div class="icon-web"><img src="imagens/spider-hero.svg" alt=""></div>
+        <nav>
+            <ul>
+                <li class="base-btn">
+                    <a href="#" class="btn-menu">Inicio</a>
+                    <div class="selected">
+                        <div class="top-left"><div></div></div>
+                        <div class="top-right"><div></div></div>
+                        <div class="bottom-left"><div></div></div>
+                        <div class="bottom-right"><div></div></div>
+                    </div>
+                </li>
+
+                <li class="base-btn">
+                    <a href="#about" class="btn-menu">Sobre mim</a>
+                    <div class="selected">
+                        <div class="top-left"><div></div></div>
+                        <div class="top-right"><div></div></div>
+                        <div class="bottom-left"><div></div></div>
+                        <div class="bottom-right"><div></div></div>
+                    </div>
+                </li>
+        
+                <li class="base-btn">
+                    <a href="#projects" class="btn-menu">Projetos</a>
+                    <div class="selected">
+                        <div class="top-left"><div></div></div>
+                        <div class="top-right"><div></div></div>
+                        <div class="bottom-left"><div></div></div>
+                        <div class="bottom-right"><div></div></div>
+                    </div>
+                </li>
+        
+                <li class="base-btn">
+                    <a href="#skills" class="btn-menu">Habilidades</a>
+                    <div class="selected">
+                        <div class="top-left"><div></div></div>
+                        <div class="top-right"><div></div></div>
+                        <div class="bottom-left"><div></div></div>
+                        <div class="bottom-right"><div></div></div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="menu-mobile" onclick="displayMenuMobile()">
+            <span></span>
+            <div class="selected">
+                <div class="top-left"><div></div></div>
+                <div class="top-right"><div></div></div>
+                <div class="bottom-left"><div></div></div>
+                <div class="bottom-right"><div></div></div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <!--INICIO  ------------------------------------------------------------------------------------- -->
+        <section id="start">
+            <div class="my-name" data-anime="left">
+                <h1>Isaque Nascimento<br> Marroque</h1>
+                <p>Desenvolvedor Front-end</p>
+
+                <div class="buttons-start">
+                    <a href="#" class="btn-social-media">
+                        Linkedln
+                        <div class="selected">
+                            <div class="top-left"><div></div></div>
+                            <div class="top-right"><div></div></div>
+                            <div class="bottom-left"><div></div></div>
+                            <div class="bottom-right"><div></div></div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Isaque803" target="_blank" class="btn-social-media">
+                        Github
+                        <div class="selected">
+                            <div class="top-left"><div></div></div>
+                            <div class="top-right"><div></div></div>
+                            <div class="bottom-left"><div></div></div>
+                            <div class="bottom-right"><div></div></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-img"> 
+                <div class="img-main" data-anime = "top"><img src="imagens/avatar.svg" alt=""></div>
+                <div class="background"></div>
+            </div>
+        </section>
+
+        <!--SOBRE MIM  ------------------------------------------------------------------------------------- -->
+        <section id="about">
+            <div class="my-img" data-anime="left">
+                <img src="imagens/minha-foto.jpg" alt="">
+                <div class="selected">
+                    <div class="top-left"><div></div></div>
+                    <div class="top-right"><div></div></div>
+                    <div class="bottom-left"><div></div></div>
+                    <div class="bottom-right"><div></div></div>
+                </div>
+            </div>
+            <div class="biography" data-anime="right">
+                <p> Meu nome é Isaque Nascimento Marroque, desde a minha infância sempre tive interesse em jogos de navegadores e, por conta da minha curiosidade em entender como as coisas funcionavam por trás desses jogos, decidi me aprofundar no assunto. Atualmente, tenho dedicado meu tempo ao desenvolvimento de websites e estou constantemente buscando me aperfeiçoar nesta área. Meu objetivo atual é obter uma experiência prática através de um estágio, de forma a fortalecer meus conhecimentos e me adaptar ao ambiente de trabalho do dia a dia.</p>
+            </div>
+        </section>
+
+        <!--PROJETOS  ------------------------------------------------------------------------------------- -->
+        <section id="projects">
+            <div class="project">
+                <img src="imagens/calculadora.png" alt="" class="img-project">
+                <h3>Calculadora</h3>
+                <p>Uma calculadora simples com adição, subtração, multiplicação e divisão, também é possivel trocar de tema.</p>
+                <div class="base-btn-view">
+                    <a href="https://isaque803.github.io/Calculator/"  target="_blank" class="btn-view">Ver</a>
+                </div>
+                <div class="selected">
+                    <div class="top-left"><div></div></div>
+                    <div class="top-right"><div></div></div>
+                    <div class="bottom-left"><div></div></div>
+                    <div class="bottom-right"><div></div></div>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="imagens/campground.png" alt="" class="img-project">
+                <h3>Campground</h3>
+                <p>Um projeto copia, até o momento foi o maior projeto feito, que serviu para aprimorar meus conhecimentos em grid, flexbox e iframes.</p>
+                <div class="base-btn-view">
+                    <a href="https://isaque803.github.io/Camping/" target="_blank" class="btn-view">Ver</a>
+                </div>
+                <div class="selected">
+                    <div class="top-left"><div></div></div>
+                    <div class="top-right"><div></div></div>
+                    <div class="bottom-left"><div></div></div>
+                    <div class="bottom-right"><div></div></div>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="imagens/todo-list.png" alt="" class="img-project">
+                <h3>To do list</h3>
+                <p>Uma simples lista de tarefas, onde coloquei em prática a manipulção do DOM e a persistência  de dados com localStorage.</p>
+                <div class="base-btn-view">
+                    <a href="https://isaque803.github.io/To-do-list/" target="_blank" class="btn-view">Ver</a>
+                </div>
+                <div class="selected">
+                    <div class="top-left"><div></div></div>
+                    <div class="top-right"><div></div></div>
+                    <div class="bottom-left"><div></div></div>
+                    <div class="bottom-right"><div></div></div>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="imagens/CRUD.png" alt="" class="img-project">
+                <h3>Cadastro de clientes</h3>
+                <p>O objetivo deste projeto foi criar um sistema de gerenciamento de clientes (CRUD) que utilize o localStorage como mecanismo de armazenamento de dados.</p>
+                <div class="base-btn-view">
+                    <a href="https://isaque803.github.io/CRUD-client-registration/" target="_blank" class="btn-view">Ver</a>
+                </div>
+                <div class="selected">
+                    <div class="top-left"><div></div></div>
+                    <div class="top-right"><div></div></div>
+                    <div class="bottom-left"><div></div></div>
+                    <div class="bottom-right"><div></div></div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="img-project"></div>
+                <h3>Nome do projeto</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem totam illum quibusdam impedit maxime, officia eveniet hic sequi quidem.</p>
+                <div class="base-btn-view">
+                    <a href="#" class="btn-view">Ver</a>
+                </div>
+                <div class="selected">
+                    <div class="top-left"><div></div></div>
+                    <div class="top-right"><div></div></div>
+                    <div class="bottom-left"><div></div></div>
+                    <div class="bottom-right"><div></div></div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="img-project"></div>
+                <h3>Nome do projeto</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem totam illum quibusdam impedit maxime, officia eveniet hic sequi quidem.</p>
+                <div class="base-btn-view">
+                    <a href="#" class="btn-view">Ver</a>
+                </div>
+                <div class="selected">
+                    <div class="top-left"><div></div></div>
+                    <div class="top-right"><div></div></div>
+                    <div class="bottom-left"><div></div></div>
+                    <div class="bottom-right"><div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!--HABILIDADES ------------------------------------------------------------------------------------- -->
+        <section id="skills">
+            <div class="title" data-anime="right">
+                <h2>habilidades</h2>
+                <p>Clique nos icones para ver mais detalhes</p>
+            </div>
+            
+            <div class="skill-html" data-anime="left">
+                <div class="html-statistic">
+                    <div class="html-icon" onclick="displayDescription(0)">
+                        <i class="fa-brands fa-html5 fa-3x"></i>
+                        <div class="selected">
+                            <div class="top-left"><div></div></div>
+                            <div class="top-right"><div></div></div>
+                            <div class="bottom-left"><div></div></div>
+                            <div class="bottom-right"><div></div></div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="progress">
+                            <p>90%</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="description">
+                    <h2>HTML</h2>
+                    <p>Tenho ampla experiência com HTML, sempre me esforço ao máximo para construir sites de forma semântica e organizada. </p>
+                </div>
+            </div>
+    
+            <div class="skill-css" data-anime="right">
+                <div class="css-statistic">
+                    <div class="css-icon" onclick="displayDescription(1)">
+                        <i class="fa-brands fa-css3-alt fa-3x"></i>
+                        <div class="selected">
+                            <div class="top-left"><div></div></div>
+                            <div class="top-right"><div></div></div>
+                            <div class="bottom-left"><div></div></div>
+                            <div class="bottom-right"><div></div></div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="progress">
+                            <p>92%</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="description">
+                    <h2>CSS</h2>
+                    <p>Possuo ampla familiaridade com CSS e tenho experiência prática em suas principais ferramentas, tais como flexbox, reponsividade e grid. Além disso, dedico tempo diariamente para praticar e aprimorar minhas habilidades, principalmente em animações, pois é uma parte que amo explorar.</p>
+                </div>
+            </div>
+
+            <div class="skill-github" data-anime="left">
+                <div class="github-statistic">
+                    <div class="github-icon" onclick="displayDescription(2)">
+                        <i class="fa-brands fa-github fa-3x"></i>
+                        <div class="selected">
+                            <div class="top-left"><div></div></div>
+                            <div class="top-right"><div></div></div>
+                            <div class="bottom-left"><div></div></div>
+                            <div class="bottom-right"><div></div></div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="progress">
+                            <p>55%</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="description">
+                    <h2>GITHUB</h2>
+                    <p>Até o momento, tenho os conhecimentos necessários para publicar um projeto no Github, mas reconheço a importância de continuar aprendendo e me aperfeiçoando.</p>
+                </div>
+            </div>
+
+            <div class="skill-sass" data-anime="right">
+                <div class="sass-statistic">
+                    <div class="sass-icon" onclick="displayDescription(3)">
+                        <i class="fa-brands fa-sass fa-2x"></i>
+                        <div class="selected">
+                            <div class="top-left"><div></div></div>
+                            <div class="top-right"><div></div></div>
+                            <div class="bottom-left"><div></div></div>
+                            <div class="bottom-right"><div></div></div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="progress">
+                            <p>60%</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="description">
+                    <h2>SASS</h2>
+                    <p>Atualmente, estou adquirindo familiaridade com o SASS e tenho aplicado em projetos recentes. Até o momento, percebi que se trata de uma ferramenta muito útil, pois otimiza significativamente o tempo de desenvolvimento.</p>
+                </div>
+            </div>
+
+            <div class="skill-javascript" data-anime="left">
+                <div class="javascript-statistic">
+                    <div class="javascript-icon" onclick="displayDescription(4)">
+                        <i class="fa-brands fa-square-js fa-3x"></i>
+                        <div class="selected">
+                            <div class="top-left"><div></div></div>
+                            <div class="top-right"><div></div></div>
+                            <div class="bottom-left"><div></div></div>
+                            <div class="bottom-right"><div></div></div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="progress">
+                            <p>65%</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="description">
+                    <h2>JAVASCRIPT</h2>
+                    <p>Possuo conhecimentos básicos em programação e tenho uma certa experiência prática em desenvolvimento de sites interativos utilizando JavaScript. Tenho buscado aprimorar minhas habilidades na linguagem e procuro sempre manter o meu código limpo e organizado.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="icon-web"><img src="imagens/spider-hero.svg" alt=""></div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

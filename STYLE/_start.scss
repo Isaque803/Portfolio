@@ -1,0 +1,177 @@
+#start{
+    width: calc(100% + 2.6rem);
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(-1.3rem);
+    padding: 7.5rem 2rem;
+    overflow: hidden;
+    position: relative;
+
+    .my-name{
+        h1{
+            font-size: 3.5rem;
+        }
+    
+        p{
+            margin: 1rem 0rem 3rem;
+        }
+
+        .buttons-start{
+            display: flex;
+            gap: 30px;
+
+            .btn-social-media{
+                background-color: rgb(70, 70, 70);
+                padding: 1rem;
+                border-radius: 5px;
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+                position: relative;
+
+                &::after{
+                    content: "";
+                    width: 100%;
+                    height: calc(100% + 5px);
+                    top: 0px;
+                    left: 0px;
+                    position: absolute;
+                    background-color: hsl(0, 0%, 20%);
+                    z-index: -1;
+                    border-radius: 4px;
+                }
+            
+                &:active{
+                    background-color: rgb(70, 70, 70);
+                    transform: translateY(5px);
+                }
+            
+                &:active::after{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .container-img{
+        
+        .img-main{
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            img{
+                padding-right: 3rem;
+            }
+        }
+
+        div::after{
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 300px;
+            background-color: rgb(243, 243, 243);
+            z-index: -4;
+            transform: translate(-28px, -200px);
+        }
+
+        .background{
+            width: 1450px;
+            height: 1850px;
+            position: absolute;
+            background-color: hsl(0, 0%, 87%);
+            top: 0px;
+            right: -500px;
+            z-index: -5;
+            transform: rotate(45deg);
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            border: 1px solid;
+            border-color: hsl(0, 0%, 87%) transparent transparent transparent;
+            border-width: 70px;
+            left: 50%;
+            top: 445px;
+            transform: translateX(-50%);
+            z-index: -4;
+        }
+    }
+}
+
+@media (max-width: 850px){
+    #start{
+        flex-direction: column-reverse;
+        padding: 5rem 1.3rem 2rem;
+        align-items: center;
+        gap: 40px;
+
+        .my-name{
+            margin-top: 5rem;
+            text-align: center;
+
+            .buttons-start{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .container-img{
+            position: static;
+
+            .img-main{
+                img{
+                    padding-right: 0rem;
+                    padding-left: 0.5rem;
+                }
+
+                &::after{
+                    transform: translate(0px, -200px);
+                }
+            }
+            
+            .background{
+                max-width: 1400px;
+                height: 450px;
+                transform: rotate(0deg);
+                right: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px){
+    #start{
+        .my-name{
+            padding-top: 2rem;
+            
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+        .container-img{
+
+            &::before{
+                top: 310px;
+            }
+
+            .img-main{
+                img{
+                    width: 200px;
+                }
+
+                &::after{
+                    transform: translate(2px, -200px);
+                    width: 10px;
+                }
+            }
+
+            .background{
+                height: 330px;
+            }
+        }
+    }
+}
