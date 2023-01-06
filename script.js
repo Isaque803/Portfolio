@@ -1,7 +1,7 @@
 //Exibi os elementos ao Scroll
 function animationScroll(){
     const elements = document.querySelectorAll("[data-anime]")
-    const windowTop = window.pageYOffset + window.innerHeight * 0.75
+    const windowTop = window.pageYOffset + window.innerHeight * 0.85
     elements.forEach((element) => {
         if (windowTop > element.offsetTop){
             element.classList.add("anime-scroll")

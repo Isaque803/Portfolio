@@ -20,10 +20,33 @@ html {
 main {
   margin: 3.7rem 0rem;
   padding: 1.3rem;
+  overflow-x: hidden;
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+[data-anime=left] {
+  transform: translate3d(-200px, 0px, 0px);
+}
+
+[data-anime=right] {
+  transform: translate3d(200px, 0px, 0px);
+}
+
+[data-anime=top] {
+  transform: translate3d(0px, -200px, 0px);
+}
+
+[data-anime].anime-scroll {
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   padding: 0.6rem 2rem 0.6rem 1rem;
   background-color: rgb(70, 70, 70);
   border-bottom: 6px solid rgb(55, 55, 55);
@@ -640,28 +663,6 @@ footer .icon-web {
 }
 footer .icon-web img {
   width: 40px;
-}
-
-[data-anime] {
-  opacity: 0;
-  transition: all 0.6s;
-}
-
-[data-anime=left] {
-  transform: translate3d(-200px, 0px, 0px);
-}
-
-[data-anime=right] {
-  transform: translate3d(200px, 0px, 0px);
-}
-
-[data-anime=top] {
-  transform: translate3d(0px, -200px, 0px);
-}
-
-[data-anime].anime-scroll {
-  transform: translate3d(0px, 0px, 0px);
-  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
