@@ -1,3 +1,5 @@
+@import "mixins";
+
 #skills{
     max-width: 500px;
     row-gap: 30px;
@@ -24,14 +26,12 @@
     }
     
     .html-icon, .css-icon, .github-icon, .sass-icon, .javascript-icon{
+        @include flexCenter;
         min-width: 60px;
         height: 55px;
         background-color: rgb(60, 60, 60);
         border-radius: 5px;
         cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         position: relative;
     
         i{
@@ -65,9 +65,7 @@
         z-index: -3;
     }
     .progress{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCenter;
         height: 100%;
         background-color: rgb(184, 184, 184);
     

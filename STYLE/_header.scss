@@ -1,11 +1,12 @@
+@import "mixins";
+
 header{
+    @include flexCenter;
     width: 100vw;
-    padding: 0.6rem 2rem 0.6rem 1rem;
+    padding: 0.6rem 2.5rem 0.6rem 1rem;
     background-color: rgb(70, 70, 70);
     border-bottom: 6px solid rgb(55, 55, 55);
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     position: fixed;
     z-index: 10;
     top: 0px;
@@ -18,8 +19,7 @@ header{
     }
 
     ul{
-        display: flex;
-        align-items: center;
+        @include flexCenter;
         gap: 20px;
     
         .base-btn{
@@ -27,8 +27,7 @@ header{
             z-index: 2;
 
             .btn-menu{
-                display: flex;
-                align-items: center;
+                @include flexCenter;
                 color: white;
                 background-color: hsl(0, 0%, 100%);
                 font-weight: 600;
@@ -68,8 +67,6 @@ header{
         height: 40px;
         background-color: rgb(240, 240, 240);
         display: none;
-        align-items: center;
-        justify-content: center;
         position: relative;
         cursor: pointer;
         border-radius: 5px;
@@ -165,7 +162,7 @@ header{
         }
 
         .menu-mobile{
-            display: flex;
+            @include flexCenter;
         }
     }
 }

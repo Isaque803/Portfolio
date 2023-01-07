@@ -1,9 +1,9 @@
+@import "mixins";
+
 #about{
+    @include flexCenter;
     margin: 10rem 0rem;
     padding: 0rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 40px;
 
     .my-img{
